@@ -1,0 +1,116 @@
+.scroll-anim {
+  &.machines__title,
+  &.machines__text,
+  &.description__title,
+  &.main-top__title,
+  &.title {
+    opacity: 0;
+    transition: opacity 1s ease 0.3s;
+  }
+  &.advantages__image,
+  &.machines__button,
+  &.main-top__button,
+  &.send-mail__send {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 1s ease 0.3s;
+  }
+  &.main-top__img {
+    .main-top-img__content {
+      transition: all 1s ease 0.5s;
+      transform: translate(0, 100%);
+      opacity: 0;
+    }
+  }
+  &.machines__img {
+    .machines-img__content {
+      transition: all 1s ease 0.5s;
+      transform: translate(0, 100%);
+      opacity: 0;
+    }
+  }
+  .machines-feature__name {
+    transition: all 1s ease 0.5s;
+    transform: translate(-100%, 100%);
+    opacity: 0;
+  }
+  .machines-feature__value {
+    transition: all 1s ease 0.5s;
+    transform: translate(100%, -100%);
+    opacity: 0;
+  }
+  &.review {
+    transition: all 1s ease 0.5s;
+    transform: scale(0);
+    opacity: 0;
+  }
+  @at-root {
+    .description__text p#{&} {
+      opacity: 0;
+      transform: translate(-100%, 0);
+      transition: all 1s ease 0s;
+    }
+  }
+  &.social__content {
+    @for $var from 1 through 3 {
+      a:nth-child(#{$var}) {
+        opacity: 0;
+        transform: translate(0, 200%);
+        transition: all 1s ease #{1 + $var * 0.2}s;
+      }
+    }
+  }
+  &__active {
+    &.social__content {
+      @for $var from 1 through 3 {
+        a:nth-child(#{$var}) {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+    }
+    @at-root {
+      .description__text p#{&} {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
+
+    &.review {
+      transform: scale(1);
+      opacity: 1;
+    }
+    &.machines__img {
+      .machines-img__content {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
+    &.advantages__image,
+    &.machines__button,
+    &.main-top__button,
+    &.send-mail__send {
+      opacity: 1;
+      transform: scale(1);
+    }
+    &.machines__title,
+    &.machines__text,
+    &.description__title,
+    &.main-top__title,
+    &.title {
+      opacity: 1;
+    }
+    &.main-top__img {
+      .main-top-img__content {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+    }
+
+    .machines-feature__name,
+    .machines-feature__value {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+}

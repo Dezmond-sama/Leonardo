@@ -1,0 +1,32 @@
+<svg id="something" xmlns="http://www.w3.org/2000/svg" width="79.094" height="78" viewBox="0 0 79.094 78">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-4 {
+        stroke: #ededed;
+        stroke-width: 4px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #ededed;
+      }
+
+      .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="39" cy="39" r="37"/>
+  <rect class="cls-2" x="1" y="39" width="24" height="4"/>
+  <path id="Polygon_1" data-name="Polygon 1" class="cls-3" d="M589.128,1189.5l-19.3-10.66,18.881-11.38Z" transform="translate(-550 -1138)"/>
+  <path class="cls-3" d="M600.916,1166.71l3.369-2.16,24.8,38.74-3.369,2.16Z" transform="translate(-550 -1138)"/>
+  <circle class="cls-4" cx="43" cy="25" r="23"/>
+  <path class="cls-3" d="M569.3,1206.59l52.591-26.74,1.813,3.56-52.591,26.74Z" transform="translate(-550 -1138)"/>
+</svg>
